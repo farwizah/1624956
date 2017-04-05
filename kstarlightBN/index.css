@@ -1,46 +1,83 @@
 ﻿body {
+    background-color: mistyrose;
 }
 
-p.login {
-    text-align: right;
+#header {
+    margin-right: 50px;
+    padding-left: 260px;
+    padding-right: 200px;
+    padding-top: 40px;
+    height: 385px;
+    width: 980px;
+    position: center;
+    
 }
+
+#map {
+    height: 292px;
+    width: 542px;
+    border: 1px solid black;
+    margin-right: 6px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    position: center;
+    padding-left: 100px;
+
+}
+
+.TB {
+         text-align:center;
+}
+
+#map-static {
+         text-align:center;
+}
+
+#map1 {
+         margin-left:400px;
+}
+
 
 #logo img{
-    padding-left: 400px;
+    width:535px; 
+    height: 150px;
+    padding-left:350px;
+    padding-right:300px;
     padding-top:10px;
+    position: center;
 }
 
 
-#Navigation1{
-    float: right;
-       
+#Nav1{
+    float: right;     
 }
 
-#Navigation1 img {
+#Nav1 img {
     height: 20px;
     width: 20px;
 }
-#Navigation1 ul li{
+#Nav1 ul li{
     display:inline;
     text-decoration:none;
     color:black;
     list-style:none;
-    padding-left:10px;
-    font-size:17px;
+    padding-left:20px;
+    font-size:30px;
+    text-align: center;
     border-left: 1px solid black;
     
 }
 
-#Navigation1 a:link{
+#Nav1 a:link{
     text-decoration:none;
     color:black;
+    text-align:center;
 }
 
 #Nav2{
     float: left;
     padding-left:360px;
-    
-    
+
 }
 
 #Nav2 a:link{
@@ -48,18 +85,127 @@ p.login {
     color:black;
 }
 
-#Nav2 ul li{
-    display:inline;
-    text-decoration:none;
-    color:black;
-    list-style:none;
-    padding-left:10px;
-    font-size:30px;
-    
-    
-    
-    
+#Nav2 ul li {
+        display: inline;
+        text-decoration: none;
+        color: black;
+        list-style: none;
+        padding-left: 10px;
+        font-size: 30px;
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+        overflow: hidden;
 }
+
+#Nav2 li a:hover {
+    background-color:honeydew ;
+}
+
+p span {
+          color:red;
+      }
+
+#wrapper{
+    width:1000px;
+    margin-left: 250px;
+    margin-right: 200px;
+    position: center;
+    background-color: lemonchiffon;
+}
+
+.item1 {
+    float: right;
+    border: 5px solid black;
+    margin: 80px 50px 50px 50px;
+    border: 3px solid grey;
+    margin-top: 1px;
+    position: relative;
+    width: 225px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.item1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.item1 .prodtext {
+    position: absolute;
+    top: -100%;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%; 
+    height: 100%;
+    color: whitesmoke;
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; 
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+
+.item1:hover .prodtext {
+    top: 0px;
+}
+.item1 .prodtext h4 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+h1{
+    font-family: KodchiangUPC;
+    font-size: 25px;
+    padding-top: -90px;
+    text-align: center;
+    color:black;
+
+}
+
+h2{
+    font-family: KodchiangUPC;
+    font-size: 30px;
+    text-align: center;
+    color:black;
+}
+
+h3 {
+    font-family: Verdana;
+    font-size: 20px;
+    align-content:center;
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 black, -1px 0 black, -1px 0 black, -1px 0 black;
+}
+
+
+h4 {
+    font-family: 'DejaVu Sans';
+    font-size: 10px;
+    text-align: left;
+    color: white;
+    text-shadow: -1px 0 black, -1px 0 black, -1px 0 black, -1px 0 black;
+}
+
+.item1 .prodtext p {
+    margin: 15px 0px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: arial;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
+
+
+    
 
 #footer { clear:both;padding: 10px 0; border-top: 1px #000 dotted; }
 #footer p {text-align: center; font-weight: bold; font-size: 14px; }

@@ -4,35 +4,34 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <title>K-Starlight BN</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style type="text/css">
-        #logo {
-            width: 472px;
-            margin-left: 200px;
-        }
-    </style>
 </head>
 <body>
+
     <form id="form1" runat="server">
-        <p class="login"><a href="login.aspx">Login</a></p>
-        <p class="admin"><a href="admin.aspx">Admin</a></p>
-
-         <div id="Navigation">
-       
-         </div>
-
+        <div id="Nav1">
+       <ul>
+        <li><a href="login.aspx">Login</a></li>
+        
+       </ul>
+        
+            </div>
+         
         <div id="logo">
-                &nbsp;<img src="images/kstarlightlogo.png" style="width: 450px; height: 110px" /></div>
+               <img src="images/kstarlightlogo.png" style="width:535px; height: 150px" />
+
+        </div>
 
         <div id="Nav2">
-        <ul>
-	 <li><a href="index.aspx">Home</a></li>
+        <ul style="height:44px; width:775px">
+	 <li><a href="default.aspx">Home</a></li>
      <li><a href="Features.aspx">Features</a></li>
 	 <li><a href="Collection.aspx">Collection</a></li>
      <li><a href="About.aspx">About</a></li>
-	 <li><a href="contact.aspx">Contact us</a></li>
+	 <li><a href="contact.aspx">Contact</a></li>
     
 </ul>
 
@@ -45,10 +44,16 @@
         </div>
 
         <div id="footer">
+            
+            <p><a href="admin.aspx">Admin</a></p>
 
-            <p> <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate HTML</a></p>
+            <p>COPYRIGHT 2017. KstarlightBN. BANDAR SERI BEGAWAN. +673 8885555.</p>
 
-                <p><a href="http://achecker.c/checker/?uri=referer">Check WCAG </a></p>
+            <p> <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></p>
+
+            <p><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a></p>
+
+            <p><a href="http://achecker.c/checker/?uri=referer">Check WCAG </a></p>
         </div>
 
     </form>
