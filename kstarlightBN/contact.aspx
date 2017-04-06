@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterK.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="kstarlightBN.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="./masterK.Master" AutoEventWireup="true" CodeFile="contact.aspx.cs" Inherits="kstarlightBN.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="index.css" rel="stylesheet" type="text/css" media="screen" />
 </asp:Content>

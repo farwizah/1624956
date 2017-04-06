@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterK.master.cs" Inherits="kstarlightBN.masterK" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterK.master.cs" Inherits="kstarlightBN.masterK" %>
 
 <!DOCTYPE html>
 
@@ -21,7 +21,7 @@
             </div>
          
         <div id="logo">
-               <img src="images/kstarlightlogo.png" style="width:535px; height: 150px" />
+               <img src="images/kstarlightlogo.png" alt="kstarlightlogo" />
 
         </div>
 
