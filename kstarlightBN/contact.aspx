@@ -58,6 +58,8 @@
 
          <br />
 
+         <br />
+
     <asp:Literal ID="litResult" runat="server"></asp:Literal>
 
          <p>Google Map</p>
