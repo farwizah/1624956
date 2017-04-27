@@ -53,10 +53,10 @@
 
     <div id="map1">
              
-        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key= AIzaSyBhclm5GLoCFg766ilv-fJ1fUNsGx3SGuU '></script>
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBhclm5GLoCFg766ilv-fJ1fUNsGx3SGuU'></script>
         <div style='overflow:hidden;height:400px;width:520px;'>
             <div id='gmap_canvas' style='height:400px;width:520px;'></div>
-            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+            
         </div> 
         <a href='https://add-map.org/'>We Are Herere</a>
         <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=6cfcf792b726fcc030a1ee19d6d4ce7409dadf52'></script>

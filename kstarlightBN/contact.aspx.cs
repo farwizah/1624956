@@ -61,15 +61,22 @@ namespace kstarlightBN
 
                     MailMessage msg = new MailMessage();
                     msg.From = new MailAddress(TxtEmail.Text);
-                    msg.To.Add(new MailAddress(TxtEmail.Text));
+                    msg.To.Add(new MailAddress("kstarlight1994@gmail.com"));
 
                     msg.Subject = TxtEmail.Text;
                     msg.IsBodyHtml = true;
-                    msg.Body = string.Format
-                        ("From: " + TxtName.Text +
-                        ",   Email: " + TxtEmail.Text +
-                        ", From: " + TxtSubject.Text +
-                        ",  Message: " + TxtMessage.Text);
+                msg.Body = string.Format
+                    ("<br><b>From: </b>" + TxtName.Text +
+                    "<b>,   <br>Email: </b>" + TxtEmail.Text +
+                    "<b>, <br>From: </b>" + TxtSubject.Text +
+                    "<b>,  <br>Message:<br> </b>" + TxtMessage.Text) +
+                    "<br>" +
+                    "<br>" +
+                    "<br>" +
+                    "<br>" +
+                    "<br>" +
+                    "<i>Best Regards, <i><br>" +
+                    "<b><i><u>Kstarlight BN</u></i></b>";
 
                     try
                     {
@@ -80,6 +87,10 @@ namespace kstarlightBN
                     {
                         litResult.Text = "Error occured while sending your message." + ex.Message;
                     }
+                TxtName.Text = "";
+                TxtSubject.Text = "";
+                TxtEmail.Text = "";
+                TxtMessage.Text = "";
                 }
         }
     }

@@ -41,6 +41,10 @@
          margin-left:400px;
 }
 
+#gmap_canvas img{
+    max-width:none!important;background:none!important
+
+}
 
 #logo img{
     width:535px; 
