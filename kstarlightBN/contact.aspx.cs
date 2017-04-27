@@ -68,7 +68,7 @@ namespace kstarlightBN
                 msg.Body = string.Format
                     ("<br><b>From: </b>" + TxtName.Text +
                     "<b>,   <br>Email: </b>" + TxtEmail.Text +
-                    "<b>, <br>From: </b>" + TxtSubject.Text +
+                    "<b>, <br>Subject: </b>" + TxtSubject.Text +
                     "<b>,  <br>Message:<br> </b>" + TxtMessage.Text) +
                     "<br>" +
                     "<br>" +
