@@ -14,7 +14,9 @@
         <p>
             <asp:TextBox ID="TxtName" runat="server" Width="256px"></asp:TextBox>
         </p>
-
+         <p>
+             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtName" ErrorMessage="enter name."></asp:RequiredFieldValidator>
+         </p>
         <p class="form-row form-row-wide">
         Subject:<span class="required">*</span>
 
@@ -22,6 +24,9 @@
         <p>
             <asp:TextBox ID="TxtSubject" runat="server" Width="256px"></asp:TextBox>
         </p>
+          <p>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TxtSubject" ErrorMessage="enter subject"></asp:RequiredFieldValidator>
+         </p>
 
         <p class="form-row form-row-wide">
         E-mail:<span class="required">*</span>
@@ -31,7 +36,7 @@
             <asp:TextBox ID="TxtEmail" runat="server" Width="256px" ValidateRequestMode="Enabled" ValidationGroup="Email"></asp:TextBox>
             &nbsp;</p>
          <p>
-                                   <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtEmail" ErrorMessage="Invalid Email " ValidationExpression="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*\s*$"></asp:RegularExpressionValidator>
+                                   <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtEmail" ErrorMessage="Invalid Email" ValidationExpression="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*\s*$"></asp:RegularExpressionValidator>
          </p>
 
         <p class="form-row form-row-wide">
@@ -40,6 +45,13 @@
 
         </p>
         <asp:TextBox ID="TxtMessage" runat="server" Height="60px" TextMode="MultiLine" Width="256px"></asp:TextBox>
+
+
+         <br />
+
+         <br />
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TxtMessage" ErrorMessage="Please enter message!" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+
         <br />
         <br />
         <asp:Button ID="BtnSendEmail_Click" runat="server" Text="Submit" OnClick="BtnSendEmail_Click_Click" />
