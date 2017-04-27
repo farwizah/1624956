@@ -36,7 +36,7 @@
             <asp:TextBox ID="TxtEmail" runat="server" Width="256px" ValidateRequestMode="Enabled" ValidationGroup="Email"></asp:TextBox>
             &nbsp;</p>
          <p>
-                                   <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtEmail" ErrorMessage="Invalid Email" ValidationExpression="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*\s*$"></asp:RegularExpressionValidator>
+                                   <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtEmail" ErrorMessage="Invalid Email!" ValidationExpression="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*\s*$"></asp:RegularExpressionValidator>
          </p>
 
         <p class="form-row form-row-wide">
@@ -50,7 +50,7 @@
          <br />
 
          <br />
-         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TxtMessage" ErrorMessage="Please enter message!" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TxtMessage" ErrorMessage="Please enter message" ForeColor="#FF3300"></asp:RequiredFieldValidator>
 
         <br />
         <br />
