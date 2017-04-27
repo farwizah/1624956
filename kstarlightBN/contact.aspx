@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="./masterK.Master" AutoEventWireup="true" CodeFile="contact.aspx.cs" Inherits="kstarlightBN.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="masterK.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="kstarlightBN.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="index.css" rel="stylesheet" type="text/css" media="screen" />
 </asp:Content>
@@ -6,39 +6,50 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
      <div class="TB">  
+        <p class="form-row form-row-wide">&nbsp;</p>
+        <p class="form-row form-row-wide">&nbsp;</p>
         <p class="form-row form-row-wide">
-            &nbsp;</p>
-        <p class="form-row form-row-wide">
-            &nbsp;</p>
-        <p class="form-row form-row-wide">
-            Name:<label for="Name:"><span class="required">*</span></label></p>
+            Name:<span class="required">*</span>
+        </p>
         <p>
             <asp:TextBox ID="TxtName" runat="server" Width="256px"></asp:TextBox>
         </p>
 
         <p class="form-row form-row-wide">
-        Subject:<label for="Subject:"><span class="required">*</span></label></p>
+        Subject:<span class="required">*</span>
+
+        </p>
         <p>
             <asp:TextBox ID="TxtSubject" runat="server" Width="256px"></asp:TextBox>
         </p>
 
         <p class="form-row form-row-wide">
-        E-mail:<label for="E-mail:"><span class="required">*</span></label></p>
-        <p>
-            <asp:TextBox ID="TxtEmail" runat="server" Width="256px"></asp:TextBox>
+        E-mail:<span class="required">*</span>
+
         </p>
+        <p>
+            <asp:TextBox ID="TxtEmail" runat="server" Width="256px" ValidateRequestMode="Enabled" ValidationGroup="Email"></asp:TextBox>
+            &nbsp;</p>
+         <p>
+                                   <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtEmail" ErrorMessage="Invalid Email " ValidationExpression="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*\s*$"></asp:RegularExpressionValidator>
+         </p>
 
         <p class="form-row form-row-wide">
 
-        Message:<label for="Message:"><span class="required">*</span></label></p>
+        Message:<span class="required">*</span>
+
+        </p>
         <asp:TextBox ID="TxtMessage" runat="server" Height="60px" TextMode="MultiLine" Width="256px"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="BtnSendEmail_Click" runat="server" Text="Submit" />
-         <p>Google Map</p>
-     </div>
+        <asp:Button ID="BtnSendEmail_Click" runat="server" Text="Submit" OnClick="BtnSendEmail_Click_Click" />
+
+         <br />
 
     <asp:Literal ID="litResult" runat="server"></asp:Literal>
+
+         <p>Google Map</p>
+     </div>
 
     <div id="map1">
              
@@ -47,7 +58,7 @@
             <div id='gmap_canvas' style='height:400px;width:520px;'></div>
             <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
         </div> 
-        <a href='https://add-map.org/'>We Are Here</a>
+        <a href='https://add-map.org/'>We Are Herere</a>
         <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=6cfcf792b726fcc030a1ee19d6d4ce7409dadf52'></script>
         <script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(4.8833,114.93330000000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.8833,114.93330000000003)});infowindow = new google.maps.InfoWindow({content:'<strong>We\'re Here!</strong><br><br> Bandar Seri Begawan<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
      </div>

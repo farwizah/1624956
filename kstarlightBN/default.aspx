@@ -9,12 +9,12 @@
     <div id="header">
         <img src="images/anigif.gif" alt="anigif"/>
     </div>
-    
+  
     <h1> Korean and K-pop Offcial Merchandise only based in Brunei Darussalam </h1>
 
      <div id="spotlight">
                     <div class="newitemwrapper-spotlight">
-                        <h2>New Arrivals from Korea!</h2>
+                        <h2>New Arrivals from Korea!</h2> 
                         <div class="item1" id="prod1">
                             <a href="Collection.aspx"></a>                
                             <img src="images/album4.png" alt="album 4" />
