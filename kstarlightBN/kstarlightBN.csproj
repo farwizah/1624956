@@ -141,6 +141,7 @@
     <Content Include="Global.asax" />
     <Content Include="images\kstarlightlogo.png" />
     <Content Include="index.css" />
+    <Content Include="uploadImage.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -193,6 +194,13 @@
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup1.cs" />
+    <Compile Include="uploadImage.aspx.cs">
+      <DependentUpon>uploadImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadImage.aspx.designer.cs">
+      <DependentUpon>uploadImage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
