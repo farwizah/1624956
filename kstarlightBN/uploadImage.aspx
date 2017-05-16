@@ -4,25 +4,19 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <p>Photo Product</p>
+    <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Upload Image</p>
+<p>
+    <asp:FileUpload ID="FileUpload1" runat="server" />
+</p>
+<p>Alternate Text</p>
+<asp:TextBox ID="AlternateText" runat="server"></asp:TextBox>
+<p>
+    <asp:Button ID="Confirm" runat="server" OnClick="Confirm_Click" Text="Confirm" />
+</p>
 
-    <p>Photo ID</p>
-    <p><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></p>
 
-    <p>Photo Name</p>
-    <p><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></p>
-
-    <p>Photo Width</p>
-    <p><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></p>
-
-    <p>Photo Height</p>
-    <p><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox></p>
-
-    <p>Photo Extension</p>
-    <p><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox></p>
-    <p>
-        <asp:Button ID="Button1" runat="server" Text="Button" />
-    </p>
     <p>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Photo_ID" DataSourceID="SqlDataSource2" Width="682px">
             <Columns>

@@ -25,24 +25,37 @@
 
     <p>Registration</p>
 
-    <p>Fullname:</p>
+    <p>
+        Fullname:<span class="required">*</span>
+    </p>
+
     <p>
         <asp:TextBox ID="TxtFullname" runat="server" Width="300px"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtFullname" ErrorMessage="Please fill in."></asp:RequiredFieldValidator>
     </p>
 
-    <p>Email:</p>
+    <p>
+        Email:<span class="required">*</span>
+    </p>
     <p>
         <asp:TextBox ID="TxtEmail" runat="server" Width="300px"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtEmail" ErrorMessage="Please fill in."></asp:RequiredFieldValidator>
     </p>
 
-    <p>Password:</p>
+    <p>
+        Password:<span class="required">*</span>
+    </p>
     <p>
         <asp:TextBox ID="TxtPswd" runat="server" Width="300px"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TxtPswd" ErrorMessage="Please enter your password"></asp:RequiredFieldValidator>
     </p>
 
-    <p>Confirm Password:</p>
+    <p>
+        Confirm Password:<span class="required">*</span>
+    </p>
     <p>
         <asp:TextBox ID="TxtCnfmPswd" runat="server" Width="300px"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TxtCnfmPswd" ErrorMessage="Please re-enter your password."></asp:RequiredFieldValidator>
     </p>
    
     <asp:Button ID="Button2" runat="server" Text="Register" OnClick="Button2_Click" />

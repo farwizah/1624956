@@ -28,7 +28,6 @@
         <div id="Nav2">
         <ul style="height:44px; width:775px">
 	 <li><a href="default.aspx">Home</a></li>
-     <li><a href="Features.aspx">Features</a></li>
 	 <li><a href="Collection.aspx">Collection</a></li>
      <li><a href="About.aspx">About</a></li>
 	 <li><a href="contact.aspx">Contact</a></li>
@@ -45,7 +44,7 @@
 
         <div id="footer">
             
-            <p><a href="admin.aspx">Admin</a></p>
+            <p><a href="admin2.aspx">Admin</a></p>
 
             <p>COPYRIGHT 2017. KstarlightBN. BANDAR SERI BEGAWAN. +673 8885555.</p>
 
