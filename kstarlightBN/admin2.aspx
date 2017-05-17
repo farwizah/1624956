@@ -112,6 +112,9 @@
         </asp:GridView>
     </p>
     <p>
+        <asp:Button ID="refresh" runat="server" OnClick="refresh_Click" Text="Refresh" />
+    </p>
+    <p>
         &nbsp;</p>
     <p>
         &nbsp;</p>

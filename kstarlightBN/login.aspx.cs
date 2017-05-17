@@ -41,7 +41,7 @@ namespace kstarlightBN
             var identityDbContext = new IdentityDbContext("IdentityConnectionString");
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var userManager = new UserManager<IdentityUser>(userStore);
-            var user = userManager.Find(TxtUsername.Text, TxtPassword.Text);
+            var user = userManager.Find(TxtEml.Text, TxtPassword.Text);
             if (user != null)
             {
                 LoginError.Text = "You has been login";

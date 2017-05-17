@@ -13,5 +13,10 @@ namespace kstarlightBN
         {
 
         }
+
+        protected void refresh_Click(object sender, EventArgs e)
+        {
+            GridView1.DataBind();
+        }
     }
 }

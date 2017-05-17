@@ -46,5 +46,10 @@ namespace kstarlightBN
                 //litResult.Text = "Your file was uploaded as " + filename + " in the images folder";
             }
         }
+
+        protected void refresh_Click(object sender, EventArgs e)
+        {
+            GridView1.DataBind();
+        }
     }
 }

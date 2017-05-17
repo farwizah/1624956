@@ -55,4 +55,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     </p>
+    <p>
+        <asp:Button ID="refresh" runat="server" OnClick="refresh_Click" Text="Refresh" />
+    </p>
 </asp:Content>
